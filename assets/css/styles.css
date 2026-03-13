@@ -1,0 +1,33 @@
+@keyframes popIn {
+    0% { transform: scale(0.9); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+.animate-pop-in {
+    animation: popIn 0.3s ease-out forwards;
+}
+
+.filter-btn {
+    padding: 0.5rem 1.5rem;
+    border-radius: 9999px;
+    background-color: #1e293b;
+    transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+    background-color: #334155;
+}
+
+.filter-btn.active {
+    background-color: #2563eb;
+}
+
+.skill-card {
+    transition: transform 0.2s ease;
+    border: 1px solid transparent;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    border-color: #3b82f6;
+}
